@@ -241,6 +241,8 @@ export class MultipleDatePickerComponent implements OnInit, ControlValueAccessor
                 } else {
                     css += ' today ';
                 }
+            } else {
+                css += ' today ';
             }
         }
         if (day.mdp.past) {
