@@ -91,7 +91,7 @@ export class MultipleDatePickerComponent implements OnInit, ControlValueAccessor
                 this.projectScope.forEach((val: Date) => {
                 let day = val;
                 this.days.forEach((d) => {
-                    if(d.date.isSame(day)){
+                    if(d.date.isSame(day, 'day')){
                         d.mdp.selected = true;
                         return;
                     }
